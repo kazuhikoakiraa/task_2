@@ -1,0 +1,199 @@
+* {
+    font-family: 'Poppins' !important;
+}
+
+/* Center the form on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9; /* Warna latar belakang lembut */
+}
+
+/* Style the form */
+form {
+    background-color: #fffdf6; /* Warna putih krem (soft) */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border: 1px solid #e5e5e5;
+}
+
+/* Neon glow effect on hover */
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px 5px rgba(255, 77, 77, 0.5), 0 0 25px 10px rgba(255, 105, 180, 0.3); /* Warna neon merah muda */
+}
+
+/* Style the form elements */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;/* Warna merah klasik Jepang */
+}
+
+/* Style all labels */
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #333;
+}
+
+/* Style input fields */
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d4a373; /* Warna kuning pastel */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #f28482; /* Warna pink pastel */
+    background-color: #fff7f0; /* Warna krem lebih terang */
+    outline: none;
+}
+
+/* Sejajarkan label "Jenis Kelamin" dengan input lainnya */
+.radio-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #f28482; /* Warna pink untuk radio button */
+}
+
+.radio-group label {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    background-color: #457b9d; /* Warna biru pastel */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for submit button */
+form input[type="submit"]:hover {
+    background-color: #1d3557; /* Biru yang lebih gelap */
+    transform: translateY(-2px);
+}
+
+/* Style container for table */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background-color: #fffdf6; /* Warna krem */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style table header */
+thead {
+    background-color: #f28482; /* Pink pastel */
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Style table body */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f9; /* Latar belakang abu-abu muda */
+}
+
+tbody td {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #e63946; /* Warna merah Jepang untuk hover */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Neon glow effect for table */
+table:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 77, 77, 0.5), 0 0 25px 10px rgba(255, 105, 180, 0.3); /* Glow merah muda */
+    transform: scale(1.02);
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        background-color: #fffdf6; /* Warna krem untuk versi mobile */
+    }
+
+    tbody td {
+        padding: 10px 20px;
+        text-align: right;
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+}

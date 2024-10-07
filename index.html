@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form Input</title>
+  </head>
+  <body>
+    <form action="detail.html" method="POST">
+      <h2>DATA DIRI</h2>
+
+      <!-- Input Nama -->
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+
+       <!-- Input Nama -->
+       <label for="NIM">NIM:</label>
+       <input type="text" id="NIM" name="NIM" required />
+
+      <!-- Input Jenis Kelamin -->
+      <label for="gender">Jenis Kelamin:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Laki-laki</label>
+
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Perempuan</label>
+      </div>
+
+      <!-- Input Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Input Pekerjaan -->
+      <label for="job">Pekerjaan:</label>
+      <input type="text" id="job" name="job" required />
+
+      <!-- Input Agama -->
+      <label for="religion">Agama:</label>
+      <select id="religion" name="religion" required>
+        <option value="islam">Islam</option>
+        <option value="christian">Kristen</option>
+        <option value="catholic">Katolik</option>
+        <option value="hindu">Hindu</option>
+        <option value="buddha">Buddha</option>
+        <option value="konghucu">Konghucu</option>
+        <option value="other">Lainnya</option>
+      </select>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
