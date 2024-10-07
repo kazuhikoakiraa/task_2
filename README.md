@@ -9,8 +9,8 @@ Ini adalah tugas 2 dari matakuliah pemrograman web, yang berupa web simple untuk
 
 Berikut adalah beberapa preview dari web:
 
-![Screenshot 1](../view1.png)
-![Screenshot 2](../view2.png)
+![Screenshot 1](view1.png)
+![Screenshot 2](view2.png)
 
 ## Kontribusi
 
